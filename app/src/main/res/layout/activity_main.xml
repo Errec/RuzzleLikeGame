@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ruzzlelikegame.errec.ruzzlelikegame.MainActivity">
+
+    <TextView
+        android:id="@+id/outputTxt"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:layout_height="wrap_content"
+        android:text="words here" />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn0"
+            android:text="V" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="O" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:text="D" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="F" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:text="G" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:text="J" />
+
+        <Button
+            android:id="@+id/btn10"
+            android:text="J" />
+
+        <Button
+            android:id="@+id/btn11"
+            android:text="U" />
+
+        <Button
+            android:id="@+id/btn12"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/btn13"
+            android:text="G" />
+
+        <Button
+            android:id="@+id/btn14"
+            android:text="W" />
+
+        <Button
+            android:id="@+id/btn15"
+            android:text="Z" />
+
+
+    </GridLayout>
+
+</LinearLayout>

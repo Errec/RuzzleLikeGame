@@ -9,84 +9,143 @@
 
     <TextView
         android:id="@+id/outputTxt"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:textAllCaps="true"
-        android:layout_height="wrap_content"
-        android:text="words here" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:text="words here"
+        android:textAllCaps="true" />
 
     <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_gravity="center"
+        android:layout_weight="7"
         android:columnCount="4"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn0"
-            android:text="V" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="V"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn1"
-            android:text="O" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="O"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn2"
-            android:text="S" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="S"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn3"
-            android:text="C" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="C"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn4"
-            android:text="D" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="D"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn5"
-            android:text="E" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="E"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn6"
-            android:text="F" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="F"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn7"
-            android:text="A" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="A"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn8"
-            android:text="G" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="G"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn9"
-            android:text="J" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="J"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn10"
-            android:text="J" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="J"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn11"
-            android:text="U" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="U"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn12"
-            android:text="S" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="S"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn13"
-            android:text="G" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="G"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn14"
-            android:text="W" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="W"
+            android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn15"
-            android:text="Z" />
-
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="Z"
+            android:textSize="48sp" />
 
     </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/highscoreTxt"
+        android:layout_height="0dp"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="high score here" />
 
 </LinearLayout>

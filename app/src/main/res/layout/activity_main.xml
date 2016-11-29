@@ -11,11 +11,13 @@
         android:id="@+id/outputTxt"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:gravity="center"
-        android:textSize="28sp"
         android:text="words here"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="28sp" />
 
     <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
@@ -139,13 +141,20 @@
 
     </GridLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:id="@+id/highscoreTxt"
+    <Button
+        android:layout_width="200dp"
         android:layout_height="0dp"
-        android:textSize="24sp"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/highscoreTxt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="high score here" />
+        android:text="high score here"
+        android:textSize="24sp" />
 
 </LinearLayout>

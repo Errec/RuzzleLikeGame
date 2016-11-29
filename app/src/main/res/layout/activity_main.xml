@@ -11,12 +11,12 @@
         android:id="@+id/outputTxt"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="words here"
         android:textAllCaps="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+
         android:textSize="28sp" />
 
     <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -31,20 +31,23 @@
             android:id="@+id/btn0"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:text="V"
+            android:onClick="btnClick"
+            android:text="T"
             android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn1"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:text="O"
+            android:onClick="btnClick"
+            android:text="E"
             android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn2"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:onClick="btnClick"
             android:text="S"
             android:textSize="48sp" />
 
@@ -52,13 +55,15 @@
             android:id="@+id/btn3"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:text="C"
+            android:onClick="btnClick"
+            android:text="T"
             android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn4"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:onClick="btnClick"
             android:text="D"
             android:textSize="48sp" />
 
@@ -66,13 +71,15 @@
             android:id="@+id/btn5"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:text="E"
+            android:onClick="btnClick"
+            android:text="D"
             android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn6"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:onClick="btnClick"
             android:text="F"
             android:textSize="48sp" />
 
@@ -80,13 +87,15 @@
             android:id="@+id/btn7"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:text="A"
+            android:onClick="btnClick"
+            android:text="R"
             android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn8"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:onClick="btnClick"
             android:text="G"
             android:textSize="48sp" />
 
@@ -94,13 +103,15 @@
             android:id="@+id/btn9"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:text="J"
+            android:onClick="btnClick"
+            android:text="R"
             android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn10"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:onClick="btnClick"
             android:text="J"
             android:textSize="48sp" />
 
@@ -108,6 +119,7 @@
             android:id="@+id/btn11"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:onClick="btnClick"
             android:text="U"
             android:textSize="48sp" />
 
@@ -115,6 +127,7 @@
             android:id="@+id/btn12"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:onClick="btnClick"
             android:text="S"
             android:textSize="48sp" />
 
@@ -122,13 +135,15 @@
             android:id="@+id/btn13"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:text="G"
+            android:onClick="btnClick"
+            android:text="O"
             android:textSize="48sp" />
 
         <Button
             android:id="@+id/btn14"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:onClick="btnClick"
             android:text="W"
             android:textSize="48sp" />
 
@@ -136,25 +151,28 @@
             android:id="@+id/btn15"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:onClick="btnClick"
             android:text="Z"
             android:textSize="48sp" />
 
     </GridLayout>
 
     <Button
+        android:onClick="submitClick"
+        android:id="@+id/submitBtn"
         android:layout_width="200dp"
         android:layout_height="0dp"
-        android:text="Submit"
         android:layout_gravity="center"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:text="Submit" />
 
     <TextView
-        android:id="@+id/highscoreTxt"
+        android:id="@+id/scoreTxt"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="high score here"
+        android:text="0 points"
         android:textSize="24sp" />
 
 </LinearLayout>

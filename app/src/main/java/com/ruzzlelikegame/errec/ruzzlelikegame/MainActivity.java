@@ -7,6 +7,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class MainActivity extends AppCompatActivity {
 
     TextView outputTextView;
@@ -14,15 +18,33 @@ public class MainActivity extends AppCompatActivity {
     TrieSET set = new TrieSET();
     int score = 0;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         outputTextView = (TextView)findViewById(R.id.outputTxt);
         scoreTextView = (TextView)findViewById(R.id.scoreTxt);
-        set.add("word");
-        set.add("test");
+
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(
+                    new InputStreamReader(getAssets().open("pokemon.txt"), "UTF-8"));
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                set.add(line.toLowerCase());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
 
@@ -47,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
         if(found){
             Toast.makeText(MainActivity.this, "\nword " + word.toUpperCase() + " found!", Toast.LENGTH_SHORT).show();
             score += 10;
-            scoreTextView.setText(String.valueOf(score) + "points");
+            scoreTextView.setText(String.valueOf(score) + " points");
             outputTextView.setText("");
         }else{
             Toast.makeText(MainActivity.this, "\nword " + word.toUpperCase() + " not found!", Toast.LENGTH_SHORT).show();
             score -= 10;
-            scoreTextView.setText(String.valueOf(score) + "points");
+            scoreTextView.setText(String.valueOf(score) + " points");
             outputTextView.setText("");
         }
     }

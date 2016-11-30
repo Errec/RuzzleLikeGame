@@ -32,7 +32,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:onClick="btnClick"
-            android:text="T"
+            android:text="P"
             android:textSize="48sp" />
 
         <Button
@@ -40,7 +40,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:onClick="btnClick"
-            android:text="E"
+            android:text="A"
             android:textSize="48sp" />
 
         <Button
@@ -64,7 +64,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:onClick="btnClick"
-            android:text="D"
+            android:text="I"
             android:textSize="48sp" />
 
         <Button
@@ -80,7 +80,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:onClick="btnClick"
-            android:text="F"
+            android:text="K"
             android:textSize="48sp" />
 
         <Button
@@ -96,7 +96,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:onClick="btnClick"
-            android:text="G"
+            android:text="C"
             android:textSize="48sp" />
 
         <Button
@@ -104,7 +104,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:onClick="btnClick"
-            android:text="R"
+            android:text="H"
             android:textSize="48sp" />
 
         <Button
